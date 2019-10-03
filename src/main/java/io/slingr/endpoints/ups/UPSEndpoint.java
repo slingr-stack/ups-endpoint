@@ -36,7 +36,6 @@ public class UPSEndpoint extends HttpEndpoint {
 
     @Override
     public void endpointStarted() {
-        this.httpService().setDebug(true);
         this.httpService().setDefaultEmptyPath("");
         this.httpService().setupDefaultHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         this.httpService().setupDefaultHeader("Access-Control-Allow-Methods", "POST");

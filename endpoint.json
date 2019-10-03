@@ -38,7 +38,7 @@
       "required": true,
       "defaultValue": "TESTING",
       "typeOptions": {
-        "allowCustom": true,
+        "allowCustom": false,
         "possibleValues": [
           {
             "label": "Testing",
