@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.slingr.endpoints</groupId>
-    <artifactId>UPS</artifactId>
+    <artifactId>ups</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>SLINGR - UPS Endpoint</name>

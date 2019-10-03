@@ -1,5 +1,5 @@
 endpoint.track = {};
-endpoint.track.request = function (reqObj) {
+endpoint.track.post = function (reqObj) {
     return endpoint.post('/Track', reqObj);
 };
 
@@ -19,10 +19,6 @@ endpoint.track.trackByInquiryNumber = function (inquiryNumber) {
 
 
     return endpoint.post('/Track', reqObj);
-};
-
-endpoint.request = function (url, reqObj) {
-    return endpoint.post(url, reqObj);
 };
 
 /////////////////////////////////////
