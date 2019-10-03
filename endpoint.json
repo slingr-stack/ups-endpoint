@@ -22,8 +22,8 @@
   "events": [],
   "functions": [
     {
-      "label": "Track By Package Identifier",
-      "name": "_trackByPackageIdentifier"
+      "label": "POST",
+      "name": "_post"
     }
   ],
   "scripts": [
@@ -32,33 +32,41 @@
   "listeners": [],
   "configuration": [
     {
-      "name": "url",
-      "label": "URL",
-      "type": "text",
-      "required": true
+      "label": "Customer Integration Environment",
+      "name": "environment",
+      "type": "buttonsGroup",
+      "required": true,
+      "defaultValue": "sandbox",
+      "typeOptions": {
+        "allowCustom": true,
+        "possibleValues": [
+          {
+            "label": "Testing",
+            "name": "TESTING"
+          },
+          {
+            "label": "Production",
+            "name": "PRODUCTION"
+          }
+        ]
+      }
     },
     {
-      "name": "accountNumber",
-      "label": "Account Number",
+      "name": "userName",
+      "label": "User Name",
       "type": "text",
-      "required": true
-    },
-    {
-      "name": "meterNumber",
-      "label": "Meter Number",
-      "type": "text",
-      "required": true
-    },
-    {
-      "name": "key",
-      "label": "Key",
-      "type": "password",
       "required": true
     },
     {
       "name": "password",
       "label": "Password",
       "type": "password",
+      "required": true
+    },
+    {
+      "name": "apiKey",
+      "label": "API Key",
+      "type": "text",
       "required": true
     }
   ]
