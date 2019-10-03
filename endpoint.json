@@ -36,7 +36,7 @@
       "name": "environment",
       "type": "buttonsGroup",
       "required": true,
-      "defaultValue": "sandbox",
+      "defaultValue": "TESTING",
       "typeOptions": {
         "allowCustom": true,
         "possibleValues": [
